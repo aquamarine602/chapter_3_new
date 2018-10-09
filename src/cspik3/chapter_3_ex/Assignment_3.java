@@ -31,6 +31,7 @@ public class Assignment_3 {
 		out.println();
 		out.println();
 		
+		
 		// 2.
 		out.println("Program 2");
 		out.println("---------");
@@ -54,7 +55,86 @@ public class Assignment_3 {
 		out.println();
 		out.println();
 		
-
+		
+		// 3.
+		out.println("Program 3");
+		out.println("---------");
+		
+			// user input
+		out.println("Enter the amount of feet:");
+		double feet = input.nextDouble();
+		
+			// calculate meters
+		double meters = feet * 0.305;
+		
+			// display meters
+		out.println();
+		out.println(feet + " feet is equal to " + meters + " meters.");
+		
+		out.println();
+		out.println();
+		
+		
+		// 4.
+		out.println("Program 4");
+		out.println("---------");
+		
+			// user input
+		out.println("Enter the weight in pounds:");
+		double lbs = input.nextDouble();
+		
+			// calculate kilos
+		double kilos = lbs * 0.454;
+		
+			// display kilos
+		out.println();
+		out.println(lbs + " pounds is equal to " + kilos + "kilograms.");
+		
+		out.println();
+		out.println();
+		
+		
+		
+		// GROUP SECTION
+		out.println();
+		out.println("GROUP SECTION");
+		out.println();
+		
+		// 5.
+		out.println("Program 5");
+		out.println("---------");
+		
+			// user input
+		out.println("Enter the starting velocity:");
+		double v0 = input.nextDouble();
+		out.println("Enter the ending velocity:");
+		double v1 = input.nextDouble();
+		out.println("Enter the timespan in seconds:");
+		double time = input.nextDouble();
+		
+			// calculate acceleration
+		double accel = (v1 - v0) / time;
+		
+			// display acceleration
+		out.println();
+		out.println("The average acceleration is " + accel);
+		
+		// 7.
+		out.println("Program 7");
+		out.println("---------");
+		
+			// user input
+		out.println("Enter the subtotal:");
+		double subtotal = input.nextDouble();
+		out.println("Enter the gratuity rate:");
+		double grat_rate = input.nextDouble();
+		
+		out.printf("%.2f", subtotal);
+		out.print(subtotal);
+		
+		
+		
+		
 	}
 
 }

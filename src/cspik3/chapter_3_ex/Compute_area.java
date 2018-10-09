@@ -19,7 +19,6 @@ public class Compute_area {
 		
 		System.out.println("What is the radius?");
 		radius = input.nextDouble();
-		System.out.println(radius);
 		
 		// constant declaration (constant is in all capital letters)
 		// can also be : "final double PI"
@@ -29,8 +28,26 @@ public class Compute_area {
 		// compute area using formula: radius*radius*pi = area
 		area = radius*radius*PI;
 		
-		// step three: display the result
-		System.out.println("The area of the cirlce is: " + area);
+		// while the radius is negative
+		while (radius < 0) {
+			System.out.println();
+			System.out.println("You can't have a negative radii!");
+			System.out.println();
+			System.out.println("Enter a new radius:");
+			radius = input.nextDouble();
+		}
+		
+		// if the radius is negative
+		if (radius < 0) {
+			System.out.println();
+			System.out.println("You can't have a negative radii!");
+			
+		} else if (radius > 0) {
+			 //step three: display the result
+			System.out.println();
+			System.out.println("The area of the cirlce is: " + area);
+			
+		}
 
 	}
 
