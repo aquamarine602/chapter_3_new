@@ -100,6 +100,7 @@ public class Assignment_3 {
 		out.println("GROUP SECTION");
 		out.println();
 		
+		
 		// 5.
 		out.println("Program 5");
 		out.println("---------");
@@ -119,6 +120,10 @@ public class Assignment_3 {
 		out.println();
 		out.println("The average acceleration is " + accel);
 		
+		out.println();
+		out.println();
+		
+		
 		// 7.
 		out.println("Program 7");
 		out.println("---------");
@@ -129,8 +134,16 @@ public class Assignment_3 {
 		out.println("Enter the gratuity rate:");
 		double grat_rate = input.nextDouble();
 		
-		out.printf("%.2f", subtotal);
-		out.print(subtotal);
+			// calculate gratuity and total
+		double rate = grat_rate / 100;
+		double total = (subtotal * rate) + subtotal;
+		double grat = total - subtotal;
+		
+			// display with rounding
+		out.printf("Your total bill is $%.2f", total);
+		out.print(" .\n");
+		out.printf("Your gratiuty is $%.2f", grat);
+		out.print(" .");
 		
 		
 		
